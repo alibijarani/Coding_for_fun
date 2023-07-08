@@ -1,0 +1,5 @@
+ #  Create Calnedar in the python
+
+import calendar
+y = calendar.month(2023,7)
+print(y)
