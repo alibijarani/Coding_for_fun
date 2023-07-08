@@ -14,9 +14,9 @@ print(f" Random generated password :  {password}")
 
 
 # 2nd Way , Using secrets library
-all_chars = string.ascii_letters + string.digits  # All alphanumeric characters
+all_chars = string.ascii_letters + string.digits  # All alphanumeric characters , Just an alternative to typing each char separately...
 length = 16
 
-password = ''.join(secrets.choice(all) for _ in range(length))
+password = ''.join(secrets.choice(all_chars) for _ in range(length))
 print(f" Password generated with secrets module :  {password}")
 
