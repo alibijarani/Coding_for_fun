@@ -21,4 +21,6 @@ while True:
     elif n==q:
         print("Good Bye, Program to generate Walsh codes has been suspended.")
         break
+    else:
+        print ("Error,  Enter a Valid Key... ")
 
