@@ -11,16 +11,17 @@ def walsh_code(n):
         return np.vstack((upper, lower))
 q='q'
 while True:
-    n = input(f"Please enter the Order of Walsh Code that you want to generate , or enter 'q' to quit: ")  # Number of Walsh codes
+    n = input("\033[32m  Please enter the Order of Walsh Code that you want to generate , or enter 'q' to quit: ")  # Number of Walsh codes
     if n.isdigit() and int(n) >=1:
         print(walsh_code(n))
         continue
     elif n.isdigit() and int(n) <= 0:
-        print("The value of n should be greater than or equal to 1")
+        print("\033[34m The value of n should be greater than or equal to 1")
         continue
+
     elif n==q:
-        print("Good Bye, Program to generate Walsh codes has been suspended.")
+        print(" \033[37m Good Bye, Program to generate Walsh codes has been suspended.")
         break
     else:
-        print ("Error,  Enter a Valid Key... ")
+        print (" \033[31m Error,  Enter a Valid Key... ")
 
